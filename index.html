@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Hi,I'm desp</title>
+</head>
+<body>
+    <div class="container" id="container">      
+        <div class="topnav">
+            <a href="https://github.com/superozzy" class="active"><img src="images/me.png" width="15px;" alt=""></a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+              <a href="index.html">Home</a>
+              <a href="projects.html">Projects</a>
+              <a href="contact.html">Contact</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          <section>
+              <div class="info">
+    <h1>Hello World,<br>i'm Desp</h1>
+    <p>A junior enthusiastic front-end developer,based in Athens,GR</p>
+    <div class="img">
+        <img id="desp"src="images/me.png" alt="image of me" width="70%;">
+        <span id="comment"></span>
+    </div>
+</div>
+</section>
+</div>
+<script src="index.js"></script>
+<script>
+
+$(document).ready(function(){
+  $('#desp').mouseover(function(){
+    $("#comment").text('Have a nice day!');
+  })
+})
+$(document).ready(function(){
+  $('#desp').mouseout(function(){
+    $("#comment").text("");
+  })
+})
+</script>
+</body>
+</html>
